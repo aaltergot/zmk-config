@@ -37,7 +37,7 @@
   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PAGE_DOWN         &kp PAGE_UP            &trans     &trans  &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN              &kp UP                 &kp RIGHT  &trans  &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &trans  &trans
-                  &trans  &trans  &trans  &trans    &trans    &trans                &none                  &lt 3 B
+                  &trans  &trans  &trans  &trans    &trans    &trans                &trans                 &lt 3 B
             >;
         };
 
@@ -47,7 +47,7 @@
   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans   &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans   &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans   &trans
-                  &trans  &trans  &trans  &trans    &trans  &trans  &lt 3 B  &none
+                  &trans  &trans  &trans  &trans    &trans  &trans  &lt 3 B  &trans
             >;
         };
 
