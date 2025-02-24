@@ -37,7 +37,7 @@
   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PAGE_DOWN         &kp PAGE_UP            &trans     &trans  &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN              &kp UP                 &kp RIGHT  &trans  &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans     &trans  &trans
-                  &trans  &trans  &trans  &trans    &trans    &trans                &trans                 &lt 3 B
+                  &trans  &trans  &trans  &trans    &trans    &trans                &none                  &lt 3 B
             >;
         };
 
@@ -47,17 +47,17 @@
   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans   &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans   &trans
   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans   &trans   &trans
-                  &trans  &trans  &trans  &trans    &trans  &trans  &lt 3 B  &trans
+                  &trans  &trans  &trans  &trans    &trans  &trans  &lt 3 B  &none
             >;
         };
 
         adjust_layer {
             bindings = <
-  &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader
-  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-  &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
-                             &none         &trans        &none         &trans          &trans        &none         &trans        &none
+  &none       &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+  &none       &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+  &sys_reset  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+                            &none         &trans        &none         &none           &trans        &none         &none         &none
             >;
         };
     };
