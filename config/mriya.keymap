@@ -19,38 +19,38 @@
 
 / {
     macros {
-        ctrlbc: ctrlbc {
+        prefixc: ctrlbc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp C>;
+            bindings = <&kp LC(Z) &kp C>;
             label = "CTRLBC";
         };
 
-        ctrlbbr: ctrlbbr {
+        prefixbr: ctrlbbr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp LEFT_BRACKET>;
+            bindings = <&kp LC(Z) &kp LEFT_BRACKET>;
             label = "CTRLBBR";
         };
 
-        ctrlbx: ctrlbx {
+        prefixx: ctrlbx {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp X>;
+            bindings = <&kp LC(Z) &kp X>;
             label = "CTRLBX";
         };
 
-        ctrlbn: ctrlbn {
+        prefixn: ctrlbn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp N>;
+            bindings = <&kp LC(Z) &kp N>;
             label = "CTRLBN";
         };
 
-        ctrlbp: ctrlbp {
+        prefixp: ctrlbp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp P>;
+            bindings = <&kp LC(Z) &kp P>;
             label = "CTRLBP";
         };
     };
@@ -70,10 +70,10 @@
 
         raise_layer {
             bindings = <
-  &kp F12    &kp F1         &kp F2        &kp F3        &kp F4          &kp F5       &kp F6    &kp F7                &kp F8                 &kp F9           &kp F10  &kp F11
-  &none      &none          &none         &none         &none           &none        &kp HOME  &kp PAGE_DOWN         &kp PAGE_UP            &kp END          &ctrlbp  &ctrlbbr
-  &none      &none          &none         &none         &none           &none        &kp LEFT  &kp DOWN              &kp UP                 &kp RIGHT        &none    &none
-  &kp LCTRL  &kp LA(LG(Z))  &ctrlbx       &ctrlbc       &none           &kp LC(B)    &ctrlbn   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &none    &none
+  &kp F12    &kp F1         &kp F2        &kp F3        &kp F4          &kp F5       &kp F6    &kp F7                &kp F8                 &kp F9           &kp F10   &kp F11
+  &none      &none          &none         &none         &none           &none        &kp HOME  &kp PAGE_DOWN         &kp PAGE_UP            &kp END          &prefixp  &prefixbr
+  &none      &none          &none         &none         &none           &none        &kp LEFT  &kp DOWN              &kp UP                 &kp RIGHT        &none     &none
+  &kp LCTRL  &kp LA(LG(Z))  &prefixx      &prefixc      &none           &kp LC(Z)    &prefixn  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &none     &none
                             &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp ENTER    &none     &none                 &none                  &lt 3 LA(SPACE)
             >;
         };
